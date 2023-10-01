@@ -1,4 +1,25 @@
-import { useState } from 'react'
+import Alert from "./components/Alert/Alert";
+import Buscador from "./components/Buscador/Buscador";
+import Formulario from "./components/Formulario/Formulario";
+import Listado from "./components/Listado/listado";
+import './App.css'
+
+function App() {
+  return (
+    <div>
+      <Formulario />
+      <Buscador />
+      <Alert />
+      <Listado />
+    </div>
+  );
+}
+export default App
+
+
+
+
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -32,4 +53,4 @@ function App() {
   )
 }
 
-export default App
+export default App*/
