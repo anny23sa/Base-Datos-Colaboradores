@@ -1,9 +1,9 @@
 import Alert from "./components/Alert/Alert";
 import Buscador from "./components/Buscador/Buscador";
 import Formulario from "./components/Formulario/Formulario";
-import Listado from "./components/Listado/listado";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Listado from "./components/Listado/Listado";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Formulario />
       <Buscador />
       <Alert />
-      <Listado />
+      <Listado/>
     </div>
   );
 }
