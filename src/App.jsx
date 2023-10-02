@@ -3,7 +3,7 @@ import Buscador from "./components/Buscador/Buscador";
 import Formulario from "./components/Formulario/Formulario";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Listado from "./components/Listado/Listado";
+//import Listado from "./components/Listado/Listado";
 
 function App() {
   return (
