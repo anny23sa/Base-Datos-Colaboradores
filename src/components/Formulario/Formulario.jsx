@@ -5,11 +5,11 @@ import { useState } from 'react'
 
 
 const Formulario = () => {
-    const [nombre, setNombre] = useState('Nombre colaborador')
-    const [email, setEmail] = useState('email colaborador')
-    const [edad, setEdad] = useState('Edad colaborador')
-    const [cargo, setCargo] = useState('Cargo colaborador')
-    const [telefono, setTelefono] = useState('Telefono colaborador')
+    const [nombre, setNombre] = useState('')
+    const [email, setEmail] = useState('')
+    const [edad, setEdad] = useState('')
+    const [cargo, setCargo] = useState('')
+    const [telefono, setTelefono] = useState('')
 
     const [error, setError] =useState(false)
     const [mensaje, setMensaje] = useState('')
@@ -34,6 +34,7 @@ const Formulario = () => {
             <div className="form-group">
               <label></label>
               <input type="text" 
+              placeholder='Nombre colaborador'
               name="nombre" 
               className="form-control w-50" 
               value={nombre} 
@@ -42,7 +43,8 @@ const Formulario = () => {
 
             <div className="form-group">
               <label></label>
-              <input type="email" 
+              <input type="email"
+               placeholder='Email colaborador'
               name="email" 
               className="form-control w-50" 
               value={email} 
@@ -52,6 +54,7 @@ const Formulario = () => {
             <div className="form-group">
               <label></label>
               <input type="text" 
+              placeholder='Edad colaborador'
               name="edad" 
               className="form-control w-50" 
               value={edad} 
@@ -60,7 +63,8 @@ const Formulario = () => {
 
             <div className="form-group">
               <label></label>
-              <input type="text" 
+              <input type="text"
+               placeholder='Cargo Colaborador'
               name="cargo" 
               className="form-control w-50" 
               value={cargo} 
@@ -70,6 +74,7 @@ const Formulario = () => {
             <div className="form-group">
               <label></label>
               <input type="text" 
+              placeholder='Teléfono colaborador'
               name="telefono" 
               className="form-control w-50" 
               value={telefono} 
