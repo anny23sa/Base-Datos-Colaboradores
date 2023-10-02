@@ -16,7 +16,7 @@ const App = () => {
       <Formulario />
       <Buscador />
       <Alert />
-      <Listado />
+      <Listado colaboradores={colaboradores} />
     </div>
   );
 }
