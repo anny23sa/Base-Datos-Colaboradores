@@ -1,10 +1,10 @@
-//import React from 'react'
+import React from 'react'
 //import { Alert } from 'bootstrap'
 //import React from 'react'
 import { useState } from 'react'
 
 
-const Formulario = () => {
+const Formulario = ({agregarColaborador}) => {
     const [nombre, setNombre] = useState('')
     const [email, setEmail] = useState('')
     const [edad, setEdad] = useState('')
@@ -26,9 +26,31 @@ const Formulario = () => {
      setMensaje('');
      };
 
+     const nuevoColaborador ={
+      id: Date.now().toString(),
+      nombre,
+      email,
+      edad,
+      cargo,
+      telefono,
+     };
+     //agregar el nuevo colaborador a la lista
+     agregarColaborador(nuevoColaborador);
+// Limpiar los campos del formulario
+setNombre('');
+setEmail('');
+setEdad('');
+setCargo('');
+setTelefono('');
+
+// Reiniciar el estado de error a false
+setError(false);
+};
+
+
     return (
         <div className='container'>
-          <h1>Agregar colaborador</h1>
+          <h2>Agregar colaborador</h2>
           <form className="Formulario" onSubmit={validarDatos}>
             {error && <p>{mensaje} </p>}
             <div className="form-group">
@@ -73,7 +95,7 @@ const Formulario = () => {
 
             <div className="form-group">
               <label></label>
-              <input type="text" 
+              <input type="tel" 
               placeholder='Teléfono colaborador'
               name="telefono" 
               className="form-control w-50" 
@@ -88,6 +110,6 @@ const Formulario = () => {
 
         </div>
       );
-}
+
 
 export default Formulario

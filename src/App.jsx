@@ -10,17 +10,29 @@ import BaseColaboradores from './components/BaseColaboradores/BaseColaboradores'
 const App = () => {
   const [colaboradores, setColaboradores] = useState(BaseColaboradores); // Inicializa con la lista de colaboradores
 
+  // Función para agregar un nuevo colaborador a la lista
+  const agregarColaborador = (nuevoColaborador) => {
+    setColaboradores([...colaboradores, nuevoColaborador]);
+  };
 
   return (
     <div>
-      <Formulario />
+      <h1>Lista De Colaboradores</h1>
+      <Listado colaboradores={colaboradores} />
+      <Formulario agregarColaborador={agregarColaborador} />
       <Buscador />
       <Alert />
-      <Listado colaboradores={colaboradores} />
     </div>
   );
-}
-export default App
+};
+
+export default App;
+
+
+
+
+
+
 
 
 

@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Listado = ({ colaboradores }) => {
   return (
     <div>
-      <h2>Listado de Colaboradores</h2>
       <table className="table">
         <thead>
           <tr>
