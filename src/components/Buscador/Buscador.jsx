@@ -7,14 +7,14 @@ const Search = ({ dataBuscador }) => {
 
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
+      <nav className="navbar bg-body-tertiary w-50">
         <div className="container">
-          <a className="navbar-brand">Listado de colaboradores</a>
+          <a className="navbar-brand"></a>
           <form className="d-flex" role="buscar">
             <input
-              className="form-control me-2"
+              className="form-control"
               type="buscar"
-              placeholder="Busqueda"
+              placeholder="Buscar un colaborador"
               aria-label="Buscar"
               onChange={handleBuscador}
             />

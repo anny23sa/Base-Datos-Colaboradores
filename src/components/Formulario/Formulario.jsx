@@ -1,6 +1,4 @@
-//import React from 'react'
-//import { Alert } from 'bootstrap'
-//import React from 'react'
+import { Alert } from 'bootstrap'
 import { useState } from 'react'
 import './Formulario.css';
 
@@ -46,16 +44,13 @@ const Formulario = ({ agregarColaborador }) => {
 
     }
   };
-  // Reiniciar el estado de error a false
-  //setError(false);
-  //};
 
 
   return (
     <div className='container'>
       <h2>Agregar colaborador</h2>
       <form className="Formulario" onSubmit={validarDatos}>
-        {error && <p>{mensaje} </p>}
+        {error && <p class="pmensaje">{mensaje} </p>}
         <div className="form-group">
           <label></label>
           <input type="text"
