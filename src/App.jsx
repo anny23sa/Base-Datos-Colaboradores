@@ -11,9 +11,13 @@ import BaseColaboradores from './components/BaseColaboradores/BaseColaboradores'
 
 const App = () => {
   const [colaboradores, setColaboradores] = useState(BaseColaboradores); // Inicializa con la lista de colaboradores
-  const [mensajeAlerta, setMensajeAlerta] = useState('')
-  const [tipoAlerta, setTipoAlerta] = useState ('successs')
-
+  const [mensajeAlerta, setMensajeAlerta] = useState('');
+  const [tipoAlerta, setTipoAlerta] = useState ('successs');
+  const [buscador, setBuscador] = useState ("");
+  
+  const handleBuscador = (value) => {
+    setBuscador (value);
+  }
   // Función para agregar un nuevo colaborador a la lista
   const agregarColaborador = (nuevoColaborador) => {
     if (!nuevoColaborador.nombre || !nuevoColaborador.email || !nuevoColaborador.edad || !nuevoColaborador.cargo || !nuevoColaborador.telefono) {
@@ -32,7 +36,7 @@ const App = () => {
       <h1>Lista De Colaboradores</h1>
       <Listado colaboradores={colaboradores} />
       <Formulario agregarColaborador={agregarColaborador} />
-      <Buscador />
+      <Buscador dataBuscador= {handleBuscador}/>
       <Alert mensaje={mensajeAlerta} tipo={tipoAlerta} />
     </div>
   );
