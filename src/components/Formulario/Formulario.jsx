@@ -50,6 +50,7 @@ return (
   <div className='container'>
     <h2>Agregar colaborador</h2>
     <p>esto es una prueba</p>
+    <p>otra prueba</p>
     <form className="Formulario" onSubmit={validarDatos}>
       {error && <p class="pmensaje">{mensaje} </p>}
       <div className="form-group">
