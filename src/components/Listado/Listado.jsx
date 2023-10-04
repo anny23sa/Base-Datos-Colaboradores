@@ -24,7 +24,7 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
           </tr>
         </thead>
         <tbody>
-          {colaboradores.map((colaborador) => (
+          {filtradoColaboradores.map((colaborador) => (
             <tr key={colaborador.id}>
               <td>{colaborador.id}</td>
               <td>{colaborador.nombre}</td>
