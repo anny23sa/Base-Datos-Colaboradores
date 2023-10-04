@@ -34,9 +34,9 @@ const App = () => {
   return (
     <div className="container">
       <h1>Lista De Colaboradores</h1>
+      <Buscador dataBuscador= {handleBuscador}/>
       <Listado colaboradores={colaboradores} />
       <Formulario agregarColaborador={agregarColaborador} />
-      <Buscador dataBuscador= {handleBuscador}/>
       <Alert mensaje={mensajeAlerta} tipo={tipoAlerta} />
     </div>
   );
