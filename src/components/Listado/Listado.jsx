@@ -7,7 +7,17 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
 
   return(
     colaboradores.nombre.toLowerCase().includes(busquedaData) ||
-    colaboradores.email.toLowerCase().includes(busquedaData)
+    colaboradores.correo.toLowerCase().includes(busquedaData) ||
+    colaboradores.edad.toLowerCase().includes(busquedaData) ||
+    colaboradores.cargo.toLowerCase().includes(busquedaData) ||
+    colaboradores.telefono.toLowerCase().includes(busquedaData) 
+//   colaborador.nombre === "" ||
+      // colaborador.correo === "" ||
+      // colaborador.edad === "" ||
+      // colaborador.cargo === "" ||
+      // colaborador.telefono === ""
+
+
   );
 })
   return (
@@ -24,7 +34,7 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
           </tr>
         </thead>
         <tbody>
-          {colaboradores.map((colaborador) => (
+          {filtradoColaboradores.map((colaborador) => (
             <tr key={colaborador.id}>
               <td>{colaborador.id}</td>
               <td>{colaborador.nombre}</td>
