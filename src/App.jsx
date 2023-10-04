@@ -37,11 +37,11 @@ const App = () => {
       <Buscador dataBuscador= {handleBuscador}/>
       <Listado colaboradores={colaboradores} 
       dataBusqueda={buscador}/>
-      <div>
+      
       <Formulario agregarColaborador={agregarColaborador}
       mensajeAlerta={mensajeAlerta}
       tipoAlerta={tipoAlerta} />
-      </div>
+     
       <Alert mensaje={mensajeAlerta} tipo={tipoAlerta} />
     </div>
   );
