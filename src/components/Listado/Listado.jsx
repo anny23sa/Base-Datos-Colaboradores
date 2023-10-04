@@ -1,7 +1,15 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Listado = ({ colaboradores }) => {
+const Listado = ({ colaboradores, dataBusqueda}) => {
+  const filtradoColaboradores = colaboradores.filter((colaboradores) => {
+  const busquedaData = dataBusqueda.toLowerCase();
+
+  return(
+    colaboradores.nombre.toLowerCase().includes(busquedaData) ||
+    colaboradores.email.toLowerCase().includes(busquedaData)
+  );
+})
   return (
     <div>
       <table className="table">
