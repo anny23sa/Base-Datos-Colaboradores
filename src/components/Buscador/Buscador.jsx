@@ -7,10 +7,10 @@ const Search = ({ dataBuscador }) => {
 
   return (
     <>
-      <nav className="navbar bg-body-tertiary w-50">
+      <nav className="bg-body- w-50">
         <div className="container">
           <a className="navbar-brand"></a>
-          <form className="d-flex" role="buscar">
+          <form className="d-flex-" role="buscar">
             <input
               className="form-control"
               type="buscar"
