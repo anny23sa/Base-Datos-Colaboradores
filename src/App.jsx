@@ -32,17 +32,21 @@ const App = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container mt-6">
       <h1>Lista De Colaboradores</h1>
+      <div className="row">
+      <div className="col-md-6">
       <Buscador dataBuscador= {handleBuscador}/>
       <Listado colaboradores={colaboradores} 
       dataBusqueda={buscador}/>
-      
+      </div>
+      <div className="col-md-6">
       <Formulario agregarColaborador={agregarColaborador}
       mensajeAlerta={mensajeAlerta}
       tipoAlerta={tipoAlerta} />
-     
+     </div>
       <Alert mensaje={mensajeAlerta} tipo={tipoAlerta} />
+    </div>
     </div>
   );
 };
