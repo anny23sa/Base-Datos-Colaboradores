@@ -26,7 +26,6 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
             <th>Edad</th>
             <th>Cargo</th>
             <th>Teléfono</th>
-            <th>Eliminar</th>
           </tr>
         </thead>
         <tbody>
