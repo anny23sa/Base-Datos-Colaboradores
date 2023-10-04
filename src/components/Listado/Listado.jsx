@@ -11,11 +11,6 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
     colaboradores.edad.toLowerCase().includes(busquedaData) ||
     colaboradores.cargo.toLowerCase().includes(busquedaData) ||
     colaboradores.telefono.toLowerCase().includes(busquedaData) 
-//   colaborador.nombre === "" ||
-      // colaborador.correo === "" ||
-      // colaborador.edad === "" ||
-      // colaborador.cargo === "" ||
-      // colaborador.telefono === ""
 
 
   );
