@@ -20,7 +20,8 @@ const Formulario = ({ agregarColaborador }) => {
       setError(true);
       setMensaje('Completa todos los campos.');
     } else {
-      //resstablecer errores si los datos son validos
+      
+      // Para restablecer errores si los datos son validos
       setError(false);
       setMensaje('');
 
@@ -33,24 +34,21 @@ const Formulario = ({ agregarColaborador }) => {
       cargo,
       telefono,
     };
-    //agregar el nuevo colaborador a la lista
+    //Agrega el nuevo colaborador a la lista
     agregarColaborador(nuevoColaborador);
-    // Limpiar los campos del formulario
+
+    // Limpia los campos del formulario
     setNombre('');
     setEmail('');
     setEdad('');
     setCargo('');
     setTelefono('');
-
   }
 };
-
 
 return (
   <div className='container'>
     <h2>Agregar colaborador</h2>
-    
-   
     <form className="Formulario" onSubmit={validarDatos}>
       {error && <p class="pmensaje">{mensaje} </p>}
       <div className="form-group">

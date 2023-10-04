@@ -5,12 +5,10 @@ import Alert from "./components/Alert/Alert";
 import Formulario from "./components/Formulario/Formulario";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BaseColaboradores from './components/BaseColaboradores/BaseColaboradores'; // Importa la lista de colaboradores
-
-
+import BaseColaboradores from './components/BaseColaboradores/BaseColaboradores'; 
 
 const App = () => {
-  const [colaboradores, setColaboradores] = useState(BaseColaboradores); // Inicializa con la lista de colaboradores
+  const [colaboradores, setColaboradores] = useState(BaseColaboradores); 
   const [mensajeAlerta, setMensajeAlerta] = useState('');
   const [tipoAlerta, setTipoAlerta] = useState('successs');
   const [buscador, setBuscador] = useState("");
@@ -28,7 +26,6 @@ const App = () => {
       setMensajeAlerta('Colaborador agregado exitosamente');
       setTipoAlerta('success');
     }
-
   }
 
   return (
@@ -50,7 +47,6 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
 
 
