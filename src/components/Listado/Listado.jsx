@@ -26,6 +26,7 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
             <th>Edad</th>
             <th>Cargo</th>
             <th>Teléfono</th>
+            <th>Eliminar</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +38,7 @@ const Listado = ({ colaboradores, dataBusqueda}) => {
               <td>{colaborador.edad}</td>
               <td>{colaborador.cargo}</td>
               <td>{colaborador.telefono}</td>
+              <td>{colaborador.eliminar}</td>
             </tr>
           ))}
         </tbody>
